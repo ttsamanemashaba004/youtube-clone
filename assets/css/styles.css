@@ -1,0 +1,502 @@
+/* Importing Robot Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Variable icons style */
+
+
+
+/* body{
+    overflow-y: scroll;
+    height: 100vh;
+} */
+
+/* Applying universal styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Applying styles for the top navigation */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1903px;
+    height: 56px;
+    padding: 0 16px;
+    background-color: white;
+    position: fixed;
+    z-index: 1000;
+}
+
+.search-section, .search-bar{
+    display: flex;
+    align-items: center;
+
+}
+
+/* Left side of nav */
+.logo-section{
+    display: flex;
+    align-items: center;
+    width: 169px;
+    height: 56px;
+    position: relative;
+}
+
+.menu-icon{
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    border-radius: 40px;
+    /* outline: 1px solid red; */
+}
+
+.menu-icon:hover{
+    background-color: rgba(128, 128, 128, 0.3);
+    cursor: pointer;
+}
+
+.yt-logo{
+    width: 120px;
+    height: 56px;
+    padding: 18px 14px 18px 16px;
+    
+}
+
+.yt-logo:hover{
+    cursor: pointer;
+}
+
+.za{
+    font-size: 10px;
+    position: absolute;
+    bottom: 32px;
+    left: 150px;
+    font-weight: 500;
+}
+
+/* Middle part of nav */
+.search-section{
+    width: 732px;
+    height: 40px;
+}
+
+.search-bar{
+    width: 640px;
+    height: 40px;
+    padding: 0 4px;
+    margin-left: 40px;
+}
+
+.search-input{
+    width: 568px;
+    height: 40px;
+}
+
+.search-input input{
+    width: 536px;
+    height: 40px;
+    padding: 0 4px 0 16px;
+    margin-left: 32px;
+    border-radius: 40px 0 0 40px;
+    border: 1px solid #ccc;
+}
+
+.search-input input::placeholder{
+    font-size: 16px;
+}
+
+
+button{
+    width: 64px;
+    height: 40px;
+    padding: 1px 6px;
+    border-radius: 0 40px 40px 0;
+    border: 1px solid #ccc;
+   }
+
+button:hover{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.16)
+}
+
+.mic{
+    width: 40px;
+    height: 40px;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    background-color: #f2f2f2;
+}
+
+
+.mic:hover{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+/* Right part of nav */
+.icons-section{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 225px;
+    height: 40px;
+    /* outline: 1px solid red; */
+}
+
+
+.notification, .create-video{
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+   
+}
+
+#img{
+    border-radius: 32px;
+
+}
+.profile{
+    width: 60px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.content{
+    display: flex;
+    width: 1903px;
+}
+
+.navi-icon:hover{
+    cursor: pointer;
+    border-radius: 40px;
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+.profile:hover{
+    cursor: pointer;
+}
+
+
+/* Side bar styles */
+.side-bar{
+    /* background-color: yellow; */
+    width: 270px;  /*the extra 20px is for the scrollbar */
+    height: calc(100vh - 56px);
+    padding: 12px 0px 12px 12px;
+    overflow-y: auto;
+    position: fixed;
+    top: 56px;
+
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+}
+
+.category > p{
+    display: flex;
+    align-items: center;
+    width: 204px;
+    height: 40px;
+    padding: 0 12px;
+    font-size: 14px;
+}
+
+.category > p:hover{
+    cursor: pointer;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    /* outline: 1px solid red; */
+}
+
+.category > p:active{
+    background-color:rgba(128, 128, 128, 0.2);
+}
+
+
+
+
+.icon{
+
+    margin-right: 24px;
+}
+
+
+.home{
+    background-color: rgb(242, 242, 242);
+    border-radius: 10px;
+}
+
+#main-home:hover{
+    background-color:rgba(128, 128, 128, 0.2);
+}
+
+.htext {  
+    font-weight: 500;
+}
+
+.you-category{
+    width: 216px;
+    height: 295px;
+    margin-top: 12px;
+    padding: 12px 0;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.heading{
+    display: inline-block;
+    font-size: 16px;
+    width: 216px;
+    height: 32px;
+    padding: 6px 12px 4px 12px;
+    font-weight: 500;
+
+}
+
+.you{
+    font-size: 16px;
+    width: 204px;
+    height: 40px;
+    padding: 0 12px;
+    /* outline: 1px solid red; */
+}
+
+.icon-right{
+    margin-left: 5px;
+}
+
+.you-title{
+    display: inline-block;
+    width: 27.250px;
+    height: 22px;
+    padding-right: 8px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.subscription-category{
+    width: 216px;
+    height: 377px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.explore-category{
+    height: 297px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.more-category{
+    height: 217px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.settings-category{
+    height: 184px;
+    padding: 12px 0;
+}
+
+.sidebar-footer{
+
+}
+
+/* Sidebar footer */
+
+.sidebar-footer{
+    font-size: 13px;
+    color: #606060;
+    font-weight: 500;
+}
+
+.sidebar-footer span{
+    margin-right: 8px;
+}
+
+.about-copyright{
+    width: 240px;
+    height: 71px;
+    padding: 16px 24px 0 10px;
+    border-top: 1px solid #e5e5e5;
+     
+}
+
+.about-copyright:hover, .terms:hover{
+    cursor: pointer;
+}
+
+.terms{
+    width: 240px;
+    height: 66px;
+    padding: 12px 24px 0 10px;
+    
+}
+
+
+
+.copyright{
+    width: 240px;
+    height: 50px;
+    padding: 16px 24px 16px 10px;
+    
+    font-size: 12px;
+}
+
+
+/* Video section styles */
+.video-section{
+    flex: 1;
+    position: absolute;
+    /* background-color: red; */
+    height: calc(100 - 56px);
+    /* overflow-y: scroll; */
+    width: 1633px;
+    left: 270px;
+    top: 56px;
+    z-index: -1;
+
+}
+
+.header{
+    background-color: white;
+    display: flex;
+    height: 56px;
+    width: 1633px;
+   
+    position: fixed;
+    top: 56px;
+    z-index: 1000;
+
+}
+
+.video-grid{
+    /* background-color: gray; */
+    display: flex;
+    justify-content: space-between;
+    height: calc(100 - 56px);
+    margin-top: 55px;
+    padding-top: 30px;
+    flex-wrap: wrap;
+    width: 1633px;
+}
+
+.video{
+    /* background-color: burlywood; */
+    width: 310.188px;
+    height: 330.469px;
+    margin: 0 6px 2px 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.video:hover{
+    cursor: pointer;
+}
+
+#all{
+    display: flex;
+    width: 40px;
+    height: 32px;
+    padding: 0 12px;
+    margin: 12px 12px 12px 6px;
+    font-size: 14px;
+    color: white;
+    background-color: black;
+    border-radius: 8px;
+    align-items: center;
+    font-weight: 500;
+}
+
+.header .more{
+    margin: 12px 12px 12px 0;
+    background-color: #f2f2f2;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+#right-arrow{
+    display: flex;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    align-items: center;
+    justify-content: center;
+   
+    margin: 12px 12px 12px 0;
+}
+
+.header span:hover{
+    background-color: rgba(128, 128, 128, 0.2);
+    cursor: pointer;
+}
+
+.thumbnail{
+    height: 174.469px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.video-info{
+    width: 100%;
+    height: calc(100% - 174px);
+    /* background-color: yellow; */
+    /* outline: 1px solid red; */
+    display: flex;
+    
+}
+
+.video-icon img{
+    width: 36px;
+    height: 36px;
+    margin: 14px 14px 0 0;
+}
+
+.video-text{
+    padding-right: 24px;
+}
+
+.video-text h3{
+    margin: 12px 0 4px 0;
+    font-size: 16px;
+}
+
+.video-text p{
+    font-size: 14px;
+    margin: 0 3px 0 0;
+    color: #818181;
+
+}
+
+.views{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    
+}
+
+.views .dot{
+    height: 5px;
+    width: 5px;
+    font-size: 5px;
+    
+    
+}

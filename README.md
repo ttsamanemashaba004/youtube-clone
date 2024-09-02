@@ -1,0 +1,1 @@
+This repo contains the scripts to create a youtube clone
