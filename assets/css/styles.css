@@ -5,10 +5,9 @@
 
 
 
-/* body{
-    overflow-y: scroll;
-    height: 100vh;
-} */
+body{
+   display: flex;
+}
 
 /* Applying universal styles */
 *{
@@ -29,6 +28,7 @@
     background-color: white;
     position: fixed;
     z-index: 1000;
+    flex: 1;
 }
 
 .search-section, .search-bar{
@@ -179,6 +179,7 @@ button:hover{
 .content{
     display: flex;
     width: 1903px;
+    flex: 1;
 }
 
 .navi-icon:hover{
